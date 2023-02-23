@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LINQtoSQL">
+  <DataContextMoniker Name="/LINQtoSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c3a51202-0ef5-49c7-bec1-725c255e4101" absoluteBounds="3.5, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/AuthorISBN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74fafce6-eb8d-4cd3-aa83-dc18215a7db1" absoluteBounds="3.515, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="101bf351-1444-4ad6-8e73-607bb720808e" absoluteBounds="0.75, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/Title" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9c0bdbf-89b9-4268-a3b8-847262d1de34" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fecd5987-874f-456e-b55a-ff25781a17d3" absoluteBounds="0.75, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/Author" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f01b76f8-282c-42ad-961f-22ed2f60dcc9" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.53929768880208); (4.5 : 4.53929768880208); (4.5 : 2.19399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/Title/Title_AuthorISBN" />
+      <nodes>
+        <classShapeMoniker Id="101bf351-1444-4ad6-8e73-607bb720808e" />
+        <classShapeMoniker Id="c3a51202-0ef5-49c7-bec1-725c255e4101" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.59699625651042); (3.5 : 1.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/Author/Author_AuthorISBN" />
+      <nodes>
+        <classShapeMoniker Id="fecd5987-874f-456e-b55a-ff25781a17d3" />
+        <classShapeMoniker Id="c3a51202-0ef5-49c7-bec1-725c255e4101" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
